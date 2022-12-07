@@ -1,2 +1,2 @@
 #!/bin/bash
-id uid=1000(Chris) gid=1000(chris)
+id uid=1000(MyUser) gid=1000(MyUser)
