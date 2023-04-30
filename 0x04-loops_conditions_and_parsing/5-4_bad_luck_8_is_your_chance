@@ -13,10 +13,9 @@ do
 		echo "bad luck"
 	elif [ $counter -eq 8 ]
 	then
-		echo "good kuck"
+		echo "good luck"
 	else
 		echo "Best School"
 	fi
-echo $counter
 (( counter++ ))
 done
