@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
+#display number from 1 - 100 in list format
 #number -eq multiple of 3 & 5 display 'FizzBuzz'
 #number -eq multiple of 3 display 'Fizz'
 #number -eq multiple of 5 display 'Buzz'
-#otherwise display number in list format
+#otherwise display number
 
 number=0
 
