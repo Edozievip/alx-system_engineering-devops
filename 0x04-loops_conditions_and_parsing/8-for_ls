@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#display some part of the current directory in a list
 
 list_files=$(ls)
 
