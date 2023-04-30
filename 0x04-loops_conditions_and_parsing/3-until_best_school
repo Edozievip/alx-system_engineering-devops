@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# use 'until' to display "Best School" 10 times
+#'until loop' executes until a condition turns True
+
+counter=1
+
+until [[ $counter -gt 10 ]]
+do
+	echo $counter "Best School"
+	(( counter++ ))
+done
