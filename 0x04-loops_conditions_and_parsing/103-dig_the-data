@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#sort the content of apache log file
+#Group visitor's by IP and HTTP status code
+#list them from greatest to the lowest number of occurence
+#display it in a list format
+
+awk '{ print $1, $9 }' apache-access.log | sort | uniq -c | sort -rr
