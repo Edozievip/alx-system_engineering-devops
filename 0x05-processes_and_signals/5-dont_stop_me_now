@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kills 4-to_infinity_and_beyond_process.
+
+kill "$(grep -f 4-to_infinity_and_beyond)"
