@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-#this script connects to my server(52.91.144.239) using my #private key(52.91.144.239) with 'ubuntu' as my username
+#this script connects to my server(52.91.144.239) using my
+#private key(52.91.144.239) with 'ubuntu' as my username
 
 ssh -i ~/.ssh/school ubuntu@52.91.144.239
