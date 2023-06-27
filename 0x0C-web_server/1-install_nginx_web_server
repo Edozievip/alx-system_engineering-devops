@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# A script that installs nginx server on an ubuntu linux distro.
 
 #update package list
 sudo apt-get update -y
@@ -7,6 +8,7 @@ sudo apt-get update -y
 sudo apt-get install nginx -y
 
 #create index.html file with "Hello World"
+touch /var/www/html/index.html
 echo "Hello World!" > /var/www/html/index.html
 
 service nginx restart
