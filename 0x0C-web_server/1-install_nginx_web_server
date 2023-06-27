@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#update package list
+sudo apt-get update -y
+
+#installing nginx
+sudo apt-get install nginx -y
+
+#create index.html file with "Hello World"
+echo "Hello World!" > /var/www/html/index.html
+
+service nginx restart
