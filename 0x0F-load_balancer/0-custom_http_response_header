@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This scripts Installs nginx, configures index.html, 404 error and 301 redirect
+#This script installs nginx, configures index.html, 404 error and 301 redirect
 #It also inserts custom header in /etc/nginx/sites-available/default
 
 var=$(hostname)
