@@ -8,6 +8,7 @@ For this project, we expect you to look at these concepts:
     
 ![debug_img](load_balancer.png)
 
-Background Context
+Background Context:
 What happens when you don’t secure your website traffic?
+
 ![https_img](https.gif)
