@@ -50,15 +50,11 @@ server {
   location = /404.html {
     internal;
     default_type text/html;
-    return 404 "Ceci n'est pas une page\\n";
+    return 404 "Ceci n'est pas une page";
   }
 }
 EOF
 
-# Create a symlink to enable the site if it doesn't exist
-if [ ! -L /etc/nginx/sites-enabled/default ]; then
-    ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-fi
 
 # Restart Nginx service
 service nginx restart
