@@ -34,16 +34,16 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend 216032-web
+frontend janvec.tech
     	bind *:80
     	bind *:443 ssl crt /etc/ssl/www.janvec.tech/www.janvec.tech.pem
 
     	# Redirect if HTTPS is not used
     	redirect scheme https code 301 if !{ ssl_fc }
 
-    	default_backend 216032-web_servers
+    	default_backend web_servers
 
-backend 216032-web_servers
+backend web_servers
     	balance roundrobin
-    	server web-01 54.234.38.85 check
-    	server web-02 100.27.0.251 check
+    	server 216032-web-01 54.234.38.85:80 check
+    	server 216032-web-02 100.27.0.251:80 check
