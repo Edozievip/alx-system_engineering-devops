@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
-
 #check if an arguement is provided and then, run the whoami command
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <username>"
-    exit 1
-fi
-
 # Run the 'whoami' command as the specified user
 sudo -u "$1" whoami
 
