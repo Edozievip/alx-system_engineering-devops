@@ -6,9 +6,6 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-# Retrieve the username from the first argument
-username=$1
-
 # Run the 'whoami' command as the specified user
 sudo -u "$1" whoami
 
